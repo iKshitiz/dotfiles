@@ -1,0 +1,106 @@
+[user]
+
+  #email = kshtjkmr35@gmail.com
+  #name = Kshitij
+  
+[sendemail]
+  smtpencryption = tls
+  smtpserver = smtp.gmail.com
+  smtpuser = kshtjkmr35@gmail.com
+  smtpserverport = 587
+
+[apply]
+  ignorewhitespace = change
+  whitespace = nowarn
+
+[push]
+  default = upstream
+  rebase = true
+  followTags = true
+
+[color]
+  interactive = true
+  branch = true
+  status = true
+
+
+[alias]
+  cdroot = !cd `git root`
+
+  out = log --branches --not --remotes
+  in = pull --dry-run
+
+  co = checkout
+  coc = checkout .
+  cob = checkout -b
+
+  ours = checkout --ours
+  theirs = checkout --theirs
+ 
+  ci = commit
+  cie = commit --allow-empty
+  cia = commit -a
+  cam = commit --amend
+  cama = commit --amend -a
+
+  cl = clean
+  cldf = clean -df
+
+  res = reset
+  resa = reset HEAD
+  
+  d = diff --color
+  lp = log -m --color -p
+ 
+  f = fetch
+  fa = fetch --all
+  fo = fetch origin
+
+  m = merge --no-edit
+  unm = reset --merge
+
+  ps = push
+  psu = push -u
+  pso = push origin
+ 
+  pl = pull
+  plo = pull origin
+  plom = pull origin master
+
+  st = status
+
+  a = add --all
+  af = add --all -f
+  ap = add -p
+
+  staged = ls-files --staged
+  modified = ls-files --modified
+  deleted = ls-files --deleted
+
+  rv = revert
+  rvc = revert --continue
+  rva = revert --abort
+
+  rb = rebase
+  rbi = rebase -i
+  rbc = rebase --continue
+  rba = rebase --abort
+  rbs = rebase --skip
+
+
+  bs = bisect
+  bsr = bisect reset
+  bsb = bisect bad
+  bsg = bisect good
+
+  mt = mergetool
+
+  br = branch
+  brup = branch --set-upstream
+  brd = branch -D
+  
+  rem = remote
+  rema = remote add
+  remr = remote rm
+  remv = remote -v
+  
